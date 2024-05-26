@@ -10,7 +10,7 @@ import (
 
 func LocalDbConnect() (*gorm.DB, error) {
 	// Open a database connection
-	connString := fmt.Sprintf("%s:%s@tcp(%s:%d)/%s", "root", "root", "192.168.2.5", 3306, "logeshkumar?parseTime=true")
+	connString := fmt.Sprintf("%s:%s@tcp(%s:%d)/%s", "root", "your password", "19XXXXXXX", 3306, "dbname?parseTime=true")
 	db, err := gorm.Open(mysql.Open(connString), &gorm.Config{})
 
 	if err != nil {
